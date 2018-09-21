@@ -1,32 +1,425 @@
-Sun Sep 16 13:07:47 2018
-Windows-7-6.1.7601-SP1
+Thu Sep 20 22:53:31 2018
+Windows-8-6.2.9200
 Ren'Py 7.1.0.882
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.23s
 Early init took 0.01s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.08s
+Loader init took 0.07s
+Loading error handling took 0.06s
+Loading script took 0.67s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.33s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\philip\\AppData\\Roaming/RenPy/backups\\ImAfraidToSendMyFeelingsOut':
+Dump and make backups. took 0.36s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.000000
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.18s
+Build styles took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.24s
+Prepare screens took 0.23s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.22s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+Couldn't import angle renderer:
+Traceback (most recent call last):
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 1911, in make_draw
+    __import__(mod)
+  File "gltexture.pxd", line 28, in init renpy.angle.gldraw
+  File "gltexture.pyx", line 1, in init renpy.angle.gltexture
+ImportError: No module named gl
+Unknown renderer: angle
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Vendor: 'Microsoft Corporation'
+Renderer: 'GDI Generic'
+Version: '1.1.0'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 768, 'current_w': 1366, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Extensions:
+    GL_EXT_bgra
+    GL_EXT_paletted_texture
+    GL_WIN_swap_hint
+Number of texture units: 0
+Can't find a workable environment.
+Total time until interface ready: 4.16700005531s
+
+Full traceback:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ast.py", line 644, in execute
+    statement_name("say")
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\exports.py", line 1455, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2217, in do_with
+    clear=clear)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\transition.py", line 360, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 497, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+
+While loading <'Image' u'eileen_happy_blue_dress.png'>:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 33.31s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.22s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.01s
+C:\d\rich\renpy-7.1.0-sdk\renpy\main.py:481: UserWarning: Memory leak via Surface in pygame_sdl2.
+  gc.collect()
+Initial gc. took 0.08s
 DPI scale factor: 1.000000
-Creating interface object took 0.05s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.01s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.05s
+Prepare screens took 0.16s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+Couldn't import angle renderer:
+Traceback (most recent call last):
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 1914, in make_draw
+    draw_objects[name] = draw_class(*args)
+  File "gldraw.pyx", line 114, in renpy.angle.gldraw.GLDraw.__init__
+NameError: name 'weakref' is not defined
+Unknown renderer: angle
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Vendor: 'Microsoft Corporation'
+Renderer: 'GDI Generic'
+Version: '1.1.0'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 768, 'current_w': 1366, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Extensions:
+    GL_EXT_bgra
+    GL_EXT_paletted_texture
+    GL_WIN_swap_hint
+Number of texture units: 0
+Can't find a workable environment.
+Total time until interface ready: 34.870000124s
+
+Full traceback:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ast.py", line 678, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\exports.py", line 1203, in say
+    who(what, *args, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 1027, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 819, in do_display
+    **display_args)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 568, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 497, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+
+While loading <'Image' u'eileen_happy_blue_dress.png'>:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 42.61s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.25s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+C:\d\rich\renpy-7.1.0-sdk\renpy\main.py:481: UserWarning: Memory leak via Surface in pygame_sdl2.
+  gc.collect()
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+Couldn't import angle renderer:
+Traceback (most recent call last):
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 1914, in make_draw
+    draw_objects[name] = draw_class(*args)
+  File "gldraw.pyx", line 114, in renpy.angle.gldraw.GLDraw.__init__
+NameError: name 'weakref' is not defined
+Unknown renderer: angle
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Vendor: 'Microsoft Corporation'
+Renderer: 'GDI Generic'
+Version: '1.1.0'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 768, 'current_w': 1366, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Extensions:
+    GL_EXT_bgra
+    GL_EXT_paletted_texture
+    GL_WIN_swap_hint
+Number of texture units: 0
+Can't find a workable environment.
+Total time until interface ready: 44.253000021s
+
+Full traceback:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ast.py", line 678, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\exports.py", line 1203, in say
+    who(what, *args, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 1027, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 819, in do_display
+    **display_args)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\character.py", line 568, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 3148, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 2065, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 487, in renpy.display.render.render_screen
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\layout.py", line 719, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 497, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 147, in renpy.display.render.render
+  File "render.pyx", line 235, in renpy.display.render.render
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+
+While loading <'Image' u'eileen_happy_blue_dress.png'>:
+  File "game/script.rpy", line 34, in script
+    FC "You've created a new Ren'Py game."
+IOError: Couldn't find file 'eileen_happy_blue_dress.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 55.65s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.27s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\philip\\AppData\\Roaming/RenPy/backups\\ImAfraidToSendMyFeelingsOut':
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+C:\d\rich\renpy-7.1.0-sdk\renpy\main.py:481: UserWarning: Memory leak via Surface in pygame_sdl2.
+  gc.collect()
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.14s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+Couldn't import angle renderer:
+Traceback (most recent call last):
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\display\core.py", line 1914, in make_draw
+    draw_objects[name] = draw_class(*args)
+  File "gldraw.pyx", line 114, in renpy.angle.gldraw.GLDraw.__init__
+NameError: name 'weakref' is not defined
+Unknown renderer: angle
+
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Vendor: 'Microsoft Corporation'
+Renderer: 'GDI Generic'
+Version: '1.1.0'
+Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 768, 'current_w': 1366, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Extensions:
+    GL_EXT_bgra
+    GL_EXT_paletted_texture
+    GL_WIN_swap_hint
+Number of texture units: 0
+Can't find a workable environment.
+Total time until interface ready: 57.4930000305s
+
+Full traceback:
+  File "game/script.rpy", line 86, in script
+    jump lockersLater
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\ast.py", line 1620, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\d\rich\renpy-7.1.0-sdk\renpy\script.py", line 873, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'lockersLater'.
+
+While running game code:
+  File "game/script.rpy", line 86, in script
+    jump lockersLater
+ScriptError: could not find label 'lockersLater'.
